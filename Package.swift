@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "CommonFriendSDK",
-            targets: ["CommonFriendSDKWrapper"]),  // Target your wrapper in the library product
+            targets: ["CommonFriendSDK"]),  // Target your wrapper in the library product
     ],
     dependencies: [
         // Alamofire dependency
@@ -22,21 +22,22 @@ let package = Package(
         // Binary target for the .xcframework
         .binaryTarget(
             name: "CommonFriendSDK",  // The name of your binary target
-            path: "./Sources/CommonFriendSDK.xcframework"  // Path to the xcframework
+            path: "Sources/CommonFriendSDK.xcframework"  // Path to the xcframework
         ),
         
         // Wrapper target with dependencies
         .target(
-            name: "CommonFriendSDKWrapper",  // Your wrapper target
+            name: "LibrarayAndFramework",  // Your wrapper target
             dependencies: ["CommonFriendSDK", "Alamofire", "SwiftyJSON"],
-            path: "./CommonFriendSDKWrapper"  // Correct path, without Sources
+            path: "Sources/LibrarayAndFramework"
         ),
         
         // Test target
         .testTarget(
             name: "CommonFriendSDKTests",
-            dependencies: ["CommonFriendSDKWrapper"],
-            path: "./Tests/LibrarayAndFrameworkTests"  // Path to test files
+            dependencies: ["LibrarayAndFramework"],
+            path: "Tests/LibrarayAndFrameworkTests"  // Path to test files
         )
     ]
 )
+
