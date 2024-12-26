@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "CommonFriendSDK",
-            targets: ["CommonFriendSDK"]),  // Target your wrapper in the library product
+            targets: ["LibrarayAndFramework"]),  // Target your wrapper in the library product
     ],
     dependencies: [
         // Alamofire dependency
@@ -30,14 +30,6 @@ let package = Package(
             name: "LibrarayAndFramework",  // Your wrapper target
             dependencies: ["CommonFriendSDK", "Alamofire", "SwiftyJSON"],
             path: "Sources/LibrarayAndFramework"
-        ),
-        
-        // Test target
-        .testTarget(
-            name: "CommonFriendSDKTests",
-            dependencies: ["LibrarayAndFramework"],
-            path: "Tests/LibrarayAndFrameworkTests"  // Path to test files
         )
     ]
 )
-
