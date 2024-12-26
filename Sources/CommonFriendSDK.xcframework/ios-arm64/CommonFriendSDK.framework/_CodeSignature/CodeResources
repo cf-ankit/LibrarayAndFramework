@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/CommonFriendSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		wGMu3CF0Nd7kJGmoY2sBYd0vP4k=
+		+ncMANki5Sw73UJUsBZTJJautdM=
 		</data>
 		<key>Modules/CommonFriendSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Modules/CommonFriendSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		uCMnbMDYjLtth8QUtK4Y9kLD5/M=
+		tIdeBOvu9IkT4L/pKzS0k6h43UM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -463,7 +463,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MfiW0ZJ+cSaIxJVOV/FyK4z9M7Gc+bBAjueOnF/JKSo=
+			V9V7dFkk3dyOy/6UVwVfMLLPaGwcyR601TXKRVhkgHg=
 			</data>
 		</dict>
 		<key>Modules/CommonFriendSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -491,7 +491,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3L5ZzvHNwnINce//kYPyNP0PYIfciwKaV6JJy8lhSLg=
+			HB2BJG9srRjfJW2tVjYLQZZmIqyRcDw+3eTrrU31Lgk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

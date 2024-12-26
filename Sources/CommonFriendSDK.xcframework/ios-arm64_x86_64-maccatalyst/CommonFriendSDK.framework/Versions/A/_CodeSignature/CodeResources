@@ -58,7 +58,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		xDXim7hDs9/ZLmqlUkl9Zg5hMRI=
+		eBKZb2MOAnl5yo58bo62Sin9TUc=
 		</data>
 		<key>Resources/Line.png</key>
 		<data>
@@ -309,28 +309,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wYzgR1suKVvKivX9yC2dvE4qbfPWGa282sV2IixElF8=
+			lcVHHABSrOEcO0g2Wmia7IEagbxnpHXF4LYoST8cpaI=
 			</data>
 		</dict>
 		<key>Modules/CommonFriendSDK.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W/g/a7j1Ov2/R6pRE0wX0pntwySeK1hp4KXI6COihYk=
+			m6N5ZLaz2Xipz8RmVlOebGcgU688Glqts37yp3HcFoU=
 			</data>
 		</dict>
 		<key>Modules/CommonFriendSDK.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wYzgR1suKVvKivX9yC2dvE4qbfPWGa282sV2IixElF8=
+			lcVHHABSrOEcO0g2Wmia7IEagbxnpHXF4LYoST8cpaI=
 			</data>
 		</dict>
 		<key>Modules/CommonFriendSDK.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/tvqnn5NWXIMq4m3Zz23zx15DLjrPPWj6C2ZR3y/WlA=
+			IIT8X/el4FyCOBHWx6fE/BNHsbngBM5ge116TX3rlbQ=
 			</data>
 		</dict>
 		<key>Modules/CommonFriendSDK.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
@@ -344,28 +344,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4XtKj1LoUYH2JUGDSBxj5jRVXBnaq7sh5tcvL2wl3ms=
+			es28Qp0sMotK7qZTlp8qrhUfVgOAM8NeWNtbkM+ckzg=
 			</data>
 		</dict>
 		<key>Modules/CommonFriendSDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BoZKiIWCLBIBxeSeBf+wF1rHKfS/uNfwe+uCgsG8W5s=
+			5ueNHhtGc9m8l2s38abrvCMc8yd76696LiXAPnjTf3o=
 			</data>
 		</dict>
 		<key>Modules/CommonFriendSDK.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4XtKj1LoUYH2JUGDSBxj5jRVXBnaq7sh5tcvL2wl3ms=
+			es28Qp0sMotK7qZTlp8qrhUfVgOAM8NeWNtbkM+ckzg=
 			</data>
 		</dict>
 		<key>Modules/CommonFriendSDK.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SUmpicdQOH/XuPn8yVre1JPMiRD0ggUVha68B9gUhMc=
+			hruzNWX4240GAKMZ/+On/FKJkvNnVlxMnaAvEhLwMnw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -470,7 +470,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mqd9uuuNcsQiLX52UICEG6jRYka7WSi1hvMMfxDN+b4=
+			NGwir7PubhiWCjoo6pepl8TUT9WR2WOl829eWEQKtXE=
 			</data>
 		</dict>
 		<key>Resources/Line.png</key>
