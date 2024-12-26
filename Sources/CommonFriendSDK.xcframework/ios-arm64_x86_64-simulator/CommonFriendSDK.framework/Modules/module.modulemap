@@ -1,0 +1,6 @@
+framework module CommonFriendSDK {
+  umbrella header "CommonFriendSDK.h"
+  export *
+
+  module * { export * }
+}

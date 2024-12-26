@@ -1,0 +1,112 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios17.4-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CommonFriendSDK
+import AVFoundation
+import AVKit
+import Alamofire
+@_exported import CommonFriendSDK
+import Contacts
+import CoreData
+import CoreLocation
+import Foundation
+import ObjectiveC
+import QuartzCore
+import SafariServices
+import Social
+import Swift
+import SwiftyJSON
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class ContactSyncingObj : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public static let shared: CommonFriendSDK.ContactSyncingObj
+  @_Concurrency.MainActor(unsafe) public func updateAuthToken(token: Swift.String, userId: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func apiCallContactSyncing(isSplashScreen: Swift.Bool = false, completion: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol BlockUnblockDelegate {
+  func success(response: Any?, APIType: Swift.String)
+  func failure(response: Any?, APIType: Swift.String)
+  func validation(Error response: Swift.String?, APIType: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers public class BlockUnblockObj : ObjectiveC.NSObject {
+  public static let shared: CommonFriendSDK.BlockUnblockObj
+  public func apiCallBlockUnblockContacts(contact_ID: Swift.String, userId: Swift.String, type: Swift.String, isConnection: Swift.String, isNetwork: Swift.String, timestamp: Swift.String, delegate: (any CommonFriendSDK.BlockUnblockDelegate)?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIAlertController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+}
+public struct ContactListMS : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public func updateCoreDataObject(withId id: Swift.String, inConnection: Swift.String?, inNetwork: Swift.String?, isSafe: Swift.String?, timestamp: Swift.String?, recentSearch: Swift.String?)
+public func LogoutSdk()
+public protocol ContactListDelegate {
+  func didFetchContactsSuccessfully(contactList: Any)
+  func didFailWithError(error: any Swift.Error)
+}
+public func getLocalContacts(delegate: (any CommonFriendSDK.ContactListDelegate)?)
+@_hasMissingDesignatedInitializers public class CoreDataManager {
+  public static let shared: CommonFriendSDK.CoreDataManager
+  public func setupCoreData()
+  public func getContext() -> CoreData.NSManagedObjectContext?
+  public func saveContext()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(CoreDataCRUD) public class CoreDataCRUD : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension CommonFriendSDK.CoreDataCRUD {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<CommonFriendSDK.CoreDataCRUD>
+  @objc @NSManaged dynamic public var countryCode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var inConnection: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var inNetwork: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isSafe: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mobileNumber: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var recentSearch: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var userId: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension CommonFriendSDK.CoreDataCRUD : Swift.Identifiable {
+  public typealias ID = Swift.String?
+}

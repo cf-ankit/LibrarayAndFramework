@@ -4,20 +4,39 @@
 import PackageDescription
 
 let package = Package(
-    name: "MyLibrary",
+    name: "CommonFriendSDK",
+    platforms: [.iOS(.v12)],  // Minimum platform version for iOS
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "MyLibrary",
-            targets: ["MyLibrary"]),
+            name: "CommonFriendSDK",
+            targets: ["CommonFriendSDKWrapper"]),  // Target your wrapper in the library product
+    ],
+    dependencies: [
+        // Alamofire dependency
+        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.8.0"),
+        
+        // SwiftyJSON dependency
+        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "5.0.2")
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
+        // Binary target for the .xcframework
+        .binaryTarget(
+            name: "CommonFriendSDK",  // The name of your binary target
+            path: "./Sources/CommonFriendSDK.xcframework"  // Path to the xcframework
+        ),
+        
+        // Wrapper target with dependencies
         .target(
-            name: "MyLibrary"),
+            name: "CommonFriendSDKWrapper",  // Your wrapper target
+            dependencies: ["CommonFriendSDK", "Alamofire", "SwiftyJSON"],
+            path: "./CommonFriendSDKWrapper"  // Correct path, without Sources
+        ),
+        
+        // Test target
         .testTarget(
-            name: "MyLibraryTests",
-            dependencies: ["MyLibrary"]),
+            name: "CommonFriendSDKTests",
+            dependencies: ["CommonFriendSDKWrapper"],
+            path: "./Tests/LibrarayAndFrameworkTests"  // Path to test files
+        )
     ]
 )
